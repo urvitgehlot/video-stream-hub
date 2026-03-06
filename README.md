@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" alt="Material UI" />
+  <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router" />
+  <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white" alt="Axios" />
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">📺 YouTube Clone Application</h1>
 
-## Available Scripts
+<p align="center">
+  A modern, fully responsive Youtube Clone application demonstrating mastery of React, Material UI (MUI), and API integration. This application replicates the core functionality and design of YouTube, providing a seamless video browsing and playing experience.
+</p>
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Modern User Interface**: Clean, pixel-perfect design powered by Material UI.
+- **Video Playback**: High-quality video playback integration using `react-player`.
+- **Search Functionality**: Discover videos effortlessly with a robust search bar.
+- **Categories & Feeds**: Browse through various categories like Music, Coding, Sports, and more.
+- **Channel Pages**: Explore detailed channel profiles with their latest videos.
+- **Video Details**: View comprehensive video information, statistics, and related sidebar videos.
+- **Fully Responsive**: Optimized for all devices, from desktop to mobile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend Framework**: [React.js](https://reactjs.org/)
+- **Styling**: [Material UI (MUI v5)](https://mui.com/)
+- **Routing**: [React Router DOM](https://reactrouter.com/)
+- **Data Fetching**: [Axios](https://axios-http.com/)
+- **Video Player**: [React Player](https://github.com/CookPete/react-player)
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to set up the project locally on your machine.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You need `Node.js` and `npm` installed on your machine.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/urvitgehlot/youtube_clone_react.git
+   ```
 
-### `npm run eject`
+2. Navigate into the project directory:
+   ```bash
+   cd youtube_clone_react
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Create a `.env` file in the root directory and add your API key (if applicable):
+   ```env
+   REACT_APP_RAPID_API_KEY=your_api_key_here
+   ```
+   *(Note: This project connects to the YouTube v3 API via RapidAPI)*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. Start the development server:
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+6. Open your browser and visit `http://localhost:3000` to view the application!
 
-## Learn More
+## 📂 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```text
+src/
+├── Components/
+│   ├── ChannelCard.jsx    # Component displaying a channel's overview card
+│   ├── ChannelDetail.jsx  # Page displaying channel details and their video feed
+│   ├── Feed.jsx           # Main page displaying category feeds and videos
+│   ├── Navbar.jsx         # Navigation bar with branding and search functionality
+│   ├── SearchBar.jsx      # Input component for searching videos
+│   ├── SearchFeed.jsx     # Page displaying search results
+│   ├── SideBar.jsx        # Sidebar containing video categories
+│   ├── VideoCard.jsx      # Component displaying video thumbnail and title
+│   ├── VideoDetail.jsx    # Page to watch video and see related videos
+│   ├── Videos.jsx         # Container for rendering multiple VideoCards
+│   └── index.js           # Exporter for clean component imports
+├── utils/                 # Utilities like API fetching logic or constants
+├── App.js                 # Main application component & routes
+└── index.js               # Application entry point
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### Analyzing the Bundle Size
+## 📜 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is open-source and available under the [MIT License](LICENSE).
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">Made with ❤️ by <a href="https://github.com/urvitgehlot">Urvit Gehlot</a></p>
